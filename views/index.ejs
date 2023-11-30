@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>create your own blog......&#10024</h1>
+    <div class="formate">
+        <form action="submit" method="post">
+    <input type="text" name="head" placeholder="Title....">
+    <textarea  type="text" name="content"  placeholder="write what you think " cols="50" rows="20"></textarea>
+     <input type="submit" value="Done">    
+    </form>
+</div>
+<ul>
+      <%  if(locals.header){ %>  
+       <%for ( i=0;i<header.length;i++){  %> 
+           <li><a href="ideas"><%=header[i]%></a></li>
+       <% } %>
+     <% } %> 
+
+   </ul>
+</body>
+</html>
